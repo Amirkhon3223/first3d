@@ -1,0 +1,8 @@
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
+  <div class="bg-white p-4 rounded-lg shadow-lg flex flex-col items-center" *ngFor="let model of models">
+    <h3 class="text-xl font-semibold mb-4">{{ model.name }}</h3>
+    <div class="h-64 w-full flex justify-center items-center">
+      <app-three-dviewer [modelPath]="'assets/' + model.file" class="h-full w-full"></app-three-dviewer>
+    </div>
+  </div>
+</div>
